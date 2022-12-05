@@ -12,7 +12,6 @@
   width: 160px;
   height: 160px;
   position: relative;
-  /* background:red; */
 }
 
 .outer {
@@ -40,7 +39,6 @@
     0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
     0px 12px 10px -10px rgba(255, 255, 255, 0.05);
 }
-
 #number {
   font-weight: 600;
 }
@@ -49,7 +47,8 @@ circle {
   stroke: url(#GradientColor);
   stroke-width: 20px;
   stroke-dasharray: 472;
-  stroke-dashoffset: 472; /* this will be animated */
+  stroke-dashoffset: 472;
+  /* this will be animated */
 }
 svg {
   position: absolute;

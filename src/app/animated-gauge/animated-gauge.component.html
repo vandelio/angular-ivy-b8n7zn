@@ -2,7 +2,7 @@
   <div class="skill">
     <div class="outer">
       <div class="inner">
-        <div data-value="50" id="number"></div>
+        <div data-value="100" id="number"></div>
       </div>
     </div>
 
@@ -14,13 +14,23 @@
     >
       <defs>
         <linearGradient id="GradientColor">
-          <stop offset="0%" stop-color="#3dcd58" />
+          <stop offset="0%" stop-color="#ff006a" />
           <stop offset="30%" stop-color="#9ec20f" />
           <stop offset="60%" stop-color="#9ec20f" />
-          <stop offset="100%" stop-color="#ff006a" />
+          <stop offset="100%" stop-color="#3dcd58" />
         </linearGradient>
       </defs>
       <circle id="svgCircle" cx="80" cy="80" r="70" stroke-linecap="round" />
+      <mask id="myMask">
+        <!-- Everything under a white pixel will be visible -->
+        <rect x="0" y="0" width="100" height="100" fill="white" />
+
+        <!-- Everything under a black pixel will be invisible -->
+        <path
+          d="M10,35 A20,20,0,0,1,50,35 A20,20,0,0,1,90,35 Q90,65,50,95 Q10,65,10,35 Z"
+          fill="black"
+        />
+      </mask>
     </svg>
   </div>
 </div>
